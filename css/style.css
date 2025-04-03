@@ -1,0 +1,256 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Work Sans', sans-serif;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+}
+.work-sans-unique123{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+   }
+.container{
+    width: 90%;
+   margin: auto;
+}
+/*start header */
+.logo-img{
+   width: 80px;
+}
+.header{
+margin-top: 10px;
+display: flex;
+justify-content: space-between;
+height: 50px;
+}
+.ul:hover .headerlist{
+  cursor: pointer;
+  display: block;
+}
+.headerlist{
+  list-style: none;
+  background-color: #ececec;
+  width: 100px;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  font-size: 18px;
+  display: none;
+  z-index: 1;
+}
+.headerlist li{
+  padding: 5px 0;
+  transition: 0.5s;
+}
+.headerlist li:hover{
+  background-color: #ddd;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 5px 10px;
+}
+.headerlist a{
+  text-decoration: none;
+  color: #333;
+  
+}
+.headernav{
+position: relative;
+}
+/*end header */
+/* start landing */
+.landing{
+   text-align: center;
+   align-items: center;
+   width: 100%;
+   height: calc(100vh - 81px);
+   background-image: url("../1.jpeg");
+   background-size: 100% 100%;
+    position: relative;
+   }
+   .intro-text{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+   }
+   .intro-text h1{
+      padding-top:50px;
+      padding-bottom:50px;
+      font-size: 60px;
+      font-weight: 900;
+      color: #10cab7;
+   }
+   .intro-text p{
+      font-size: 20px;
+      color: #000000;
+      font-weight: 400;
+      line-height: 1.6;
+   }
+/* end landing */
+/* start futures */
+.futures{
+   margin-top: 20px;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   gap: 20px;
+   background-color: #f6f6f6;
+   text-align: center;
+   height: 50vh;
+   line-height: 1.6;
+   z-index: 1;
+}
+ i{
+   padding: 10px;
+   font-size: 40px;
+   color: #10cab7;
+}
+.futures h3{
+   padding: 10px 0;
+   font-size: 20px;
+   font-weight: 900;
+   color: #333;
+   z-index: 1;
+}
+.futures p{
+   font-size: 16px;
+   color: #333;
+   z-index: 1111;
+}
+@media(max-width:700px){
+   .futures{
+      height: 70vh;
+   }
+.servicestxt h1{
+      font-size: 10px;
+   }
+}
+/* end futures */
+/* start services */
+.services{
+   margin-top: 20px;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+   gap: 20px;
+   text-align: center;
+   height: 90vh;
+   line-height: 1.6;
+}
+.servicestxt{
+   text-align: center;
+   height: 40vh;
+   line-height: 1.6;
+   position: relative;
+}
+.servicestxt h1{
+   text-align: center;
+   font-size: 100px;
+   font-weight: 900;
+   color:#ebeced;
+   margin: 0;
+   padding:0;
+   z-index: -1;
+}
+.servicestxt p{
+   font-size: 20px;
+   color: #888888;
+   font-weight: 400;
+   position: absolute;
+   top: 117px;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.srv{
+display: flex;
+justify-content: space-between;
+align-items: space-between;
+gap: 30px;
+padding: 20px;
+}
+@media(max-width:700px){
+.servicestxt h1{
+   margin-top: 50px;
+   margin-bottom: 0px;
+      font-size: 70px;
+   }
+   .servicestxt{
+      height: 25vh;
+   }
+}
+/* end services */
+/*start portfolio setion*/
+.conport{
+   margin-top: 25px;
+   background-color: #fafafa;
+   height: 60vh;
+}
+.conport h1{
+   color: fafafa;
+}
+.portdivs{
+   display: grid;
+   grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)) ;
+   height: 60vh;
+   align-items: center;
+   justify-content: center;
+   margin-left:50px ;
+   position: relative;
+   gap: 20px;
+}
+.portdivs .port{
+   width: 320px;
+   height: 320px;
+   position: relative;
+   background-color: #f6f6f6;
+   border: #f6f6f6 solid 5px;
+}
+.portdivs .porttxt{
+   width: 320px;
+   height: 120px;
+   background-color: #fff;
+   position: absolute;
+   bottom: 0;
+
+}
+.porttxt h2{
+   position: absolute;
+   left: 6px;
+   top: 8px;
+   font-size: 20px;
+   font-weight: 800;
+   color: #1f2021;
+}
+.porttxt p{
+   position: absolute;
+   left: 5px;
+   top: 35px;
+   font-size: 15px;
+   font-weight: 400;
+   color: #4d4c4c;
+}
+.port:hover{
+   transform: scale(1.1);
+   transition: 1s;
+}
+@media(max-width:700px){
+   .services{
+      height: 90vh;
+   }
+   .conport{
+      height: 100vh;
+   }
+   .servicestxt h1{
+      margin-top: 50px;
+      margin-bottom: 0px;
+         font-size: 70px;
+      }
+      .servicestxt{
+         height: 25vh;
+      }
+   }
+/*end portfolio setion*/

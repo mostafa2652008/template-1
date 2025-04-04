@@ -258,5 +258,11 @@ padding: 20px;
       .servicestxt{
          height: 25vh;
       }
+      .futures{
+      height: 160vh;
+      text-align: center;
+      align-items: center;
+  
+   }
    }
 /*end portfolio setion*/

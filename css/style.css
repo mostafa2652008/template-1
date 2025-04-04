@@ -238,11 +238,17 @@ padding: 20px;
    transition: 1s;
 }
 @media(max-width:700px){
+   .landing{
+      height: 130vh;
+      margin-bottom: 50px;
+   }
    .services{
-      height: 120vh;
+      height: 140vh;
+      margin-bottom: 50px;
    }
    .conport{
-      height: 100vh;
+      height: 130vh;
+      margin-bottom: 50px;
    }
    .servicestxt h1{
       margin-top: 50px;
